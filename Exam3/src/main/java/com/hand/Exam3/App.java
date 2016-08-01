@@ -28,7 +28,7 @@ import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
  */
 public class App {
     public static void main(String[] args) {
-        String information = Get("http://hq.sinajs.cn/list=sh601006");
+        String information = Get("http://hq.sinajs.cn/list=sz300170");
         String s = information.substring(information.indexOf("\"") + 1, information.lastIndexOf("\""));
         String[] infos = s.split(",");
         Stock stock = new Stock(infos[0], infos[1], infos[2], infos[3], infos[4], infos[5]);
